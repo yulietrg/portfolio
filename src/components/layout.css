@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/Bebas/BebasNeue Book.woff2') format('woff2'),
+    url('../fonts/Bebas/BebasNeue Book.woff') format('woff'),
+    url('../fonts/Bebas/BebasNeue Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{ 
+	font-family: 'Lot';
+	src: url('../fonts/Lot/Lot-Regular.woff') format('woff'),
+       url('../fonts/Lot/Lot-Regular.woff2') format('woff2'),
+	     url('../fonts/Lot/Lot-Regular.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap');
+
+/*----------------------*/
+
+h1{
+  font-family: 'Bebas'!important;
+  font-weight: 800;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
