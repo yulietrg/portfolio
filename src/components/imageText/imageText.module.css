@@ -1,0 +1,175 @@
+.containerFluid{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.textWrapper {
+    width: 100%;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.justifyContentEnd {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.justifyContentStart {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.alignItemsCenter {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.alignItemsStart {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.oneHalf {
+    width: 60%;
+}
+
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.oneHalf.halfText .subheading {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 3px;
+    padding-bottom: 1rem;
+}
+
+.oneHalf.halfText h2 {
+    font-size: 80px;
+    display: inline-block;
+    margin-bottom: 1.5rem !important;
+    color: white;
+    font-family: 'Lot', Arial, sans-serif;
+    padding-bottom: 10px;
+    position: relative;
+    /* border-bottom: 3px solid #000000; */
+}
+
+.oneHalf.halfText h2:after {
+    content:'';
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom:-1px;
+    height: 1px;
+    background: #E57983;
+    background: -webkit-gradient(linear, left top, right top, from(#E57983), to(#EFB197));
+    background: -webkit-linear-gradient(left, #E57983, #EFB197);
+    background: -o-linear-gradient(left, #E57983, #EFB197);
+    background: linear-gradient(to right, #E57983, #EFB197);
+}
+
+.customBtn {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (min-width: 992px){
+    .oneHalf.halfText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .oneHalf.halfText .textRight {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-width: 60%;
+    }
+
+    .oneHalf.halfText .textLeft{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-width: 58%;
+    }
+}
+
+@media (min-width: 1200px){
+    .oneHalf.halfText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 1140px;
+        margin: 0 auto;
+    }
+
+    .oneHalf.halfText .textRight {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-width: 58%;
+    }
+
+    .oneHalf.halfText .textLeft{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        max-width: 58%;
+    }
+}
