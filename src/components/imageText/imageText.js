@@ -1,18 +1,23 @@
 import React from "react"
 import classes from './imageText.module.css'
 
+import { Link } from "gatsby"
+
 const ImageText = (props) => {
 
-    let aligment, text_aligment;
+    let aligment, text_aligment, page;
 
     if(props.aligment === "right"){
-        aligment = [classes.row, classes.textWrapper, classes.justifyContentEnd].join(' ');
-        text_aligment = [classes.textRight, classes.alignItemsCenter].join(' ');
+        aligment = [classes.row, classes.textWrapper, classes.justifyContentEnd].join(' ')
+        text_aligment = [classes.textRight, classes.alignItemsCenter].join(' ')
     }
     else{
-        aligment = [classes.row, classes.textWrapper, classes.justifyContentStart].join(' ');
-        text_aligment = [classes.textLeft, classes.alignItemsStart].join(' '); 
+        aligment = [classes.row, classes.textWrapper, classes.justifyContentStart].join(' ')
+        text_aligment = [classes.textLeft, classes.alignItemsStart].join(' ')
     }
+
+    props.page ? page = <Link to={props.link} className = {classes.customBtn}>Learn More</Link> : page = <a href={props.link} target="_blank" className = {classes.customBtn}>Website</a>
+
 
     const style = {
         height: '600px',
@@ -27,19 +32,19 @@ const ImageText = (props) => {
                         <div className = {text_aligment}>
                             <div>
                                 <div>
-                                    <span className = {classes.subheading}>Website Development and AR experience</span>
-                                    <h2>SPOT COLOR</h2>
+                                    <span className = {classes.subheading}>{props.subHeading}</span>
+                                    <h2>{props.heading}</h2>
                                 </div>
                                 <div>
-                                    <p>WP theme customization, WooCommerce Integration, Responsive development, AR and face recognition Virtual Try-on (work in progress).</p>
-                                    <p><a href={props.link} target="_blank" className = {classes.customBtn}>Website</a></p>
+                                    <p>{props.description}</p>
+                                    <p>{page}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
             </div>
         </div>
-    );
+    )
 }
 
-export default ImageText;
+export default ImageText

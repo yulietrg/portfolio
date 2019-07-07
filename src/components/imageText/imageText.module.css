@@ -75,13 +75,14 @@
 }
 
 .oneHalf.halfText h2 {
-    font-size: 80px;
+    font-size: 70px;
     display: inline-block;
     margin-bottom: 1.5rem !important;
     color: white;
     font-family: 'Lot', Arial, sans-serif;
     padding-bottom: 10px;
     position: relative;
+    font-weight: normal;
     /* border-bottom: 3px solid #000000; */
 }
 
@@ -138,7 +139,7 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        max-width: 58%;
+        max-width: 60%;
     }
 }
 
@@ -160,7 +161,7 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        max-width: 58%;
+        max-width: 60%;
     }
 
     .oneHalf.halfText .textLeft{
@@ -170,6 +171,6 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        max-width: 58%;
+        max-width: 60%;
     }
 }
