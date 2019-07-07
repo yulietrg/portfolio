@@ -1,0 +1,45 @@
+
+.contact{
+	padding: 8rem 0 12rem; 
+}
+
+.contact .btn {
+	background: #E57983;
+    background: -webkit-gradient(linear, left top, right top, from(#E57983), to(#EFB197));
+    background: -webkit-linear-gradient(left, #E57983, #EFB197);
+    background: -o-linear-gradient(left, #E57983, #EFB197);
+    background: linear-gradient(to right, #E57983, #EFB197);
+	border-radius: 4px;
+    box-sizing: border-box;
+	color: #ffffff;
+	display: block;
+	font: 900 1.125rem 'Monserrat', Arial, sans-serif; /*18*/
+	height: 70px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 2px;
+	position: relative;
+    text-decoration: none;
+	text-transform: uppercase;
+	width: 264px;
+	z-index: 2;
+}
+
+.contact .btn:hover {
+	color: #fff;
+}
+
+.contact .btn span {
+	align-items: center;
+	background: #2C374A;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+
+.contact .btn:hover span {
+	background: transparent;
+}

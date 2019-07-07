@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Lot';
+    src: url('Lot-Regular.woff2') format('woff2'),
+        url('Lot-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
