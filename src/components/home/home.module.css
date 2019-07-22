@@ -73,13 +73,13 @@
   }
   
   .portfolioContainer h5.name{
-    top: 11rem;
+    top: 32%;
     left: 3.1rem;
     font-size: 1.2rem;
   }
   
   .portfolioContainer h5.profession{
-    top: 21.5rem;
+    top: 62%;
     right: 3.2rem;
     font-size: 1.2rem;
   }

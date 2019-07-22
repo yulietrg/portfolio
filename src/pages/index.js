@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 /*COMPONENTS*/
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import Home from "../components/home/home"
 import About from "../components/about/about"
 import Contact from "../components/contact/contact"

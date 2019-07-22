@@ -5,11 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header/header"
+import Header from "../header/header"
+import Sidebar from "../sidebar/sidebar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -23,9 +24,21 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [state, setState] = useState(false)
+
+  const HeaderToggleClickHandler = () =>{
+    setState(true)
+  }
+
+  const SidebarToggleClickHandler = () =>{
+    setState(false)
+  }
+
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Sidebar SidebarClickHandler = {SidebarToggleClickHandler} show={state}/>
+      <Header siteTitle={data.site.siteMetadata.title} HeaderClickHandler = {HeaderToggleClickHandler}/>
         <main>{children}</main>
         {/* <footer>
           © {new Date().getFullYear()}, Built with

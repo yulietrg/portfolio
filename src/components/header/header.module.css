@@ -2,12 +2,14 @@ header{
  background: transparent;
 }
 
-.container{
+header{
     /* max-width: 1000px; */
     padding: 3rem;
     position: fixed;
     display: block;
     margin: 0 auto;
+    z-index: 9;
+    width: 100%;
   }
 
 .red{
