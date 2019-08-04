@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Yuliet Remon • Frontend Developer`,
-    description: `Yuliet Remon's Portfolio. Florida based interactive developer.`,
+    title: `Yuliet Remon • Front-end Developer`,
+    description: `Yuliet Remon's Portfolio. Florida based interactive Front-end developer.`,
     author: `@yulietrg`,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

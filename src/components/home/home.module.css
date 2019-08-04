@@ -13,51 +13,39 @@
     position: absolute;
   }
   
-  .floatingWork{
-    font-size: 7rem;
-    -webkit-transform-origin: top left;
-          -ms-transform-origin: top left;
-              transform-origin: top left;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    /* top: 25%; */
-    bottom: 35%;
-    left: 5.5rem;
-  }
-  
+  .floatingWork,
   .floatingAbout{
-    font-size: 5rem;
-    /* left: 72%; */
-    bottom: -3rem;
-    left: 4.5rem;
+    display: none;
   }
   
   .portfolioParent{
-    max-width: 37rem;
-    position: absolute;
     background: #E57983;
     background: -webkit-gradient(linear, left top, right top, from(#E57983), to(#EFB197));
     background: -webkit-linear-gradient(left, #E57983, #EFB197);
     background: -o-linear-gradient(left, #E57983, #EFB197);
     background: linear-gradient(to right, #E57983, #EFB197);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+    max-width: 37rem;
     padding: 2px;
-    top: 7rem;
-    right: 20%;
   }
   
   .portfolioContainer {
     background: #2C374A;
-    padding: 3rem 3rem 2rem;
+    padding: 1.5rem;
   }
   
   .portfolioContainer h1 {
     color: white;
     font-family: 'Lot', Arial, sans-serif;
     text-align: center;
-    font-size: 9rem;
+    font-size: 5rem;
     line-height: 1;
-    letter-spacing: 14px;
+    letter-spacing: 1rem;
     font-weight: normal;
   }
   
@@ -72,17 +60,20 @@
     color: white;
     position: absolute;
   }
+
+  .portfolioContainer h5.name,
+  .portfolioContainer h5.profession{
+    font-size: .9rem;
+  }
   
   .portfolioContainer h5.name{
-    top: 32%;
-    left: 3.1rem;
-    font-size: 1.2rem;
+    top: 30%;
+    left: 2rem;
   }
   
   .portfolioContainer h5.profession{
-    top: 62%;
+    top: 60%;
     right: 3.2rem;
-    font-size: 1.2rem;
   }
   
   .contactIcon {
@@ -99,7 +90,7 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     -o-border-radius: 50%;
-    z-index: 9994;
+    z-index: 9;
     height: 50px;
     width: 50px;
     background-color: rgb(44, 55, 74);
@@ -111,24 +102,83 @@
     height: auto;
     margin-bottom: 0;
     padding-top: .8rem;
+    transition: all 0.5s ease;
+  }
+
+  .contactIcon img:hover{
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
   }
 
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) { }
 
   /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) { 
-    /* .portfolioParent{
-      top: 50%;
-      right: 50%;
-      -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
-    } */
+  @media (min-width: 768px) {
+
+    .portfolioContainer {
+      padding: 1.5rem;
+    }
+    
+    .portfolioContainer h1 {
+      letter-spacing: 0.875rem;
+      font-size: 9rem;
+    }
+
+    .portfolioContainer h5.name,
+    .portfolioContainer h5.profession{
+      font-size: 1.2rem;
+    }
+
+    .portfolioContainer h5.name{
+      top: 30%;
+      left: 1.5rem;
+    }
+    
+    .portfolioContainer h5.profession{
+      top: 62%;
+      right: 3.2rem;
+    }
+    
+    .floatingWork,
+    .floatingAbout{
+      display: block;
+    }
+
+    .floatingWork{
+      display: block;
+      font-size: 7rem;
+      -webkit-transform-origin: top left;
+            -ms-transform-origin: top left;
+                transform-origin: top left;
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
+      bottom: 35%;
+      left: 5.5rem;
+    }
+    
+    .floatingAbout{
+      font-size: 5rem;
+      bottom: -3rem;
+      left: 4.5rem;
+    }
   }
 
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) { }
 
   /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) { }
+  @media (min-width: 1200px) {
+
+    .portfolioParent{
+      max-width: 37rem;
+      padding: 2px;
+      top: 7rem;
+      right: 20%;
+      -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    }
+
+  }

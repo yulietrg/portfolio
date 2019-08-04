@@ -43,3 +43,22 @@
 .contact .btn:hover span {
 	background: transparent;
 }
+
+.smIcon{
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.smIcon a{
+	display: inline-block;
+}
+
+.smIcon a img{
+	width: 50px;
+	transition: all 0.5s ease;
+}
+
+.smIcon a img:hover {
+	-webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
