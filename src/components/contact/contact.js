@@ -8,7 +8,7 @@ const Contact = () =>{
     return (   
         <section id="contact" className={classes.contact}>
             <div className={classes.contactContainer}>
-                <a className="gradient_btn contact_btn" href="#"> <span>CONTACT ME</span> </a>
+                <a className="contact_btn" href="#"> <span>CONTACT ME</span> </a>
             </div>
         </section>  
     )

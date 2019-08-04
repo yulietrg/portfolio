@@ -1,5 +1,6 @@
 import React from "react"
-import classes from './home.module.css'
+//import classes from './home.module.css'
+import classes from './home2.module.css'
 
 /*IMAGES*/
 import contact_icon from "../../images/contact-icon.svg"

@@ -1,5 +1,5 @@
 .about p{
-    padding: 10rem 0 3rem 4.5rem;
+    padding: 4rem 1rem;
 }
   
 .about p{
@@ -10,4 +10,12 @@
     color: white;
     font-family: 'Lot', Arial, sans-serif!important;
     font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+
+    .about p{
+        padding: 10rem 0 3rem 4.5rem;
+    }
+
 }

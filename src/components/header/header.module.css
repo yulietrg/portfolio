@@ -12,8 +12,9 @@ header{
     width: 100%;
   }
 
-.red{
+.menuIcon{
     color: white;
     font-family: 'Bebas', Arial, sans-serif!important;
     font-size: 2.2rem;
+    cursor: pointer;
 }

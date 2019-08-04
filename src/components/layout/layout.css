@@ -30,7 +30,8 @@ p{
 }
 
 
-.gradient_btn {
+.contact_btn,
+.sidebar_btn li a{
 	background: #E57983;
   background: -webkit-gradient(linear, left top, right top, from(#E57983), to(#EFB197));
   background: -webkit-linear-gradient(left, #E57983, #EFB197);
@@ -54,16 +55,18 @@ p{
   width: 264px;
 }
 
-.sidebar_btn{
+.sidebar_btn li a{
   width: auto;
   display: inline-block;
 }
 
-.gradient_btn:hover {
+.contact_btn:hover,
+.sidebar_btn li a:hover{
 	color: #fff;
 }
 
-.gradient_btn span {
+.contact_btn span,
+.sidebar_btn li a span{
 	align-items: center;
 	background: #2C374A;
 	/* border-radius: 4px; */
@@ -76,19 +79,20 @@ p{
   font-weight: 900;
 }
 
-.gradient_btn.contact_btn span {
+.contact_btn span {
   padding: .5rem;
   justify-content: center;
   font-size: 1.125rem;
 }
 
-.gradient_btn.sidebar_btn span {
+.sidebar_btn li a span{
   padding: .5rem;
   justify-content: left;
   font-size: 2.5rem;
 }
 
-.gradient_btn:hover span {
+.contact_btn:hover span,
+.sidebar_btn li a:hover span{
 	background: transparent;
 }
 

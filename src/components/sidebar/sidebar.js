@@ -13,11 +13,12 @@ const Sidebar = (props) => {
   return(
 
       <nav className={classes_sidebar}>          
-        <ul>
-          <button onClick={props.SidebarClickHandler} className={classes.closeBtn}>Close &times;</button>
-          <li><a href="#" className="gradient_btn sidebar_btn"><span>ABOUT</span></a></li>
-          <li><a href="#" className="gradient_btn sidebar_btn"><span>WORK</span></a></li>
-          <li><a href="#" className="gradient_btn sidebar_btn"><span>CONTACT</span></a></li>
+        <ul className="sidebar_btn">
+          {/* <button onClick={props.SidebarClickHandler} className={classes.closeBtn}>Close &times;</button> */}
+          <li><a href="#about" onClick={props.SidebarClickHandler}><span>ABOUT</span></a></li>
+          <li><a href="#work" onClick={props.SidebarClickHandler}><span>WORK</span></a></li>
+          <li><a href="#contact" onClick={props.SidebarClickHandler}><span>CONTACT</span></a></li>
+          <li><a href="#" onClick={props.SidebarClickHandler}><span>BYE!</span></a></li>
         </ul>
       </nav>
 

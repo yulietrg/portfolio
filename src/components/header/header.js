@@ -16,7 +16,7 @@ const Header = (props) => {
         </div> */}
 
         <div className={classes.container}>
-          <a onClick={props.HeaderClickHandler} className={classes.red}>{"{ }"}</a>
+          <a onClick={props.HeaderClickHandler} className={classes.menuIcon}>{"{ }"}</a>
         </div>
       </nav>
     </header>

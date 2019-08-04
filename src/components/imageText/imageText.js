@@ -20,7 +20,6 @@ const ImageText = (props) => {
 
 
     const style = {
-        height: '600px',
         backgroundImage: `url(${props.img})`
     }
     
