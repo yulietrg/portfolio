@@ -18,8 +18,12 @@
 
 /*----------------------*/
 
-body{
+body, main{
   background-color: #2C374A;
+}
+
+main.visuAll_page{
+  background-color: #06070D;
 }
 
 
@@ -68,7 +72,7 @@ p{
 .contact_btn span,
 .sidebar_btn li a span{
 	align-items: center;
-	background: #2C374A;
+	background-color: #2C374A;
 	border-radius: 4px;
 	display: flex;
 	justify-content: center;
@@ -484,7 +488,7 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.2rem;
 }
 figure {
   margin-left: 0;

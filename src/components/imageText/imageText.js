@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const ImageText = (props) => {
 
-    let aligment, text_aligment, page;
+    let aligment, text_aligment, page, copyarr, copy;
 
     if(props.aligment === "right"){
         aligment = [classes.row, classes.textWrapper, classes.justifyContentEnd].join(' ')
@@ -16,7 +16,14 @@ const ImageText = (props) => {
         text_aligment = [classes.textLeft, classes.alignItemsStart].join(' ')
     }
 
-    props.page ? page = <Link to={props.link} className = {classes.customBtn}>Learn More</Link> : page = <a href={props.link} target="_blank" className = {classes.customBtn}>Website</a>
+
+    copyarr = props.description.split('<br>');
+
+    copy = copyarr.map((elem, index)=>{
+        return <p key={index}>{elem}</p>;
+    });
+        
+    props.page ? page = <Link to={props.link} className = {classes.customBtn}>{props.btn}</Link> : page = <a href={props.link} target="_blank" className = {classes.customBtn}>{props.btn}</a>
 
 
     const style = {
@@ -35,7 +42,7 @@ const ImageText = (props) => {
                                     <h2>{props.heading}</h2>
                                 </div>
                                 <div>
-                                    <p>{props.description}</p>
+                                       {copy}
                                     <p>{page}</p>
                                 </div>
                             </div>

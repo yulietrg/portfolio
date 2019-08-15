@@ -12,9 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../header/header"
 import Sidebar from "../sidebar/sidebar"
 import "./layout.css"
-import "./normalize.css"
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -38,13 +37,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Sidebar SidebarClickHandler = {SidebarToggleClickHandler} show={state}/>
+      <Sidebar SidebarClickHandler = {SidebarToggleClickHandler} show={state} page={props.page}/>
+
       <Header siteTitle={data.site.siteMetadata.title} HeaderClickHandler = {HeaderToggleClickHandler}/>
-        <main>{children}</main>
+
+      <main className={props.page}>{props.children}</main>
         {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()}, Yuliet Remon
         </footer> */}
     </>
   )

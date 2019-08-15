@@ -43,7 +43,7 @@
     color: white;
     font-family: 'Lot', Arial, sans-serif;
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 1;
     letter-spacing: 1rem;
     font-weight: normal;
@@ -74,6 +74,7 @@
   .portfolioContainer h5.profession{
     top: 60%;
     right: 3.2rem;
+    white-space: nowrap;
   }
   
   .contactIcon {
@@ -132,7 +133,6 @@
 
     .portfolioContainer h5.name{
       top: 30%;
-      left: 1.5rem;
     }
     
     .portfolioContainer h5.profession{

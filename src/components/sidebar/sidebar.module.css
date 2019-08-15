@@ -27,3 +27,13 @@
 ul{
     list-style: none;
 }
+
+
+.hide{
+    display: none;
+}
+
+.dark,
+.dark li a span{
+    background-color: #06070D!important;  
+}
