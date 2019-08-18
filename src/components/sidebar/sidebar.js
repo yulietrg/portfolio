@@ -9,17 +9,22 @@ const Sidebar = (props) => {
     let home, nohome, style
     console.log(props.page);
 
-
-    if (props.show){
-      if(props.page === "visuAll_page"){
-        home = classes.hide
+    if(props.page === "visuAll_page"){
+      home = classes.hide
+      if (props.show) 
         classes_sidebar = [classes.sidebar, classes.open, classes.dark].join(' ')
-      }
-      else{
-        nohome = classes.hide
-        classes_sidebar = [classes.sidebar, classes.open].join(' ')
-      }
+      else 
+        classes_sidebar = [classes.sidebar, classes.dark].join(' ')
     }
+    else{
+      nohome = classes.hide
+      if (props.show) 
+        classes_sidebar = [classes.sidebar, classes.open].join(' ')
+    }
+
+    // if (props.show){
+      
+    // }
       
 
 

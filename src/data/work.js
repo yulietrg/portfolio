@@ -55,7 +55,7 @@ const data =[
         id: 4,
         subHeading : 'DESIGN & DEVELOPMENT WEB APP',
         heading : 'OLLEYES',
-        description : 'VR algorithims for Visual Fiel test using FOVE headset, VisuAll UI, UX design and fron-end.',
+        description : 'VR algorithims for Visual Field test using FOVE headset, VisuAll UI, UX design and front-end.',
         image : work5,
         link : '/visuAll/',
         aligment : 'right',

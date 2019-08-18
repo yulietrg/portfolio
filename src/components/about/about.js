@@ -8,7 +8,7 @@ const About = () =>{
     return (   
         <section id="about">
             <div className={classes.about}>
-                <p>I’m a <span className={classes.highlightedText}>Front-end developer</span>, passionate for design and interactive web development.</p>
+                <p>Hello! I’m Yuliet Remon, a <span className={classes.highlightedText}>Front-end developer</span> based  in Florida, passionate for interactive web development.</p>
             </div>
         </section>  
     )

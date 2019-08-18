@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
-import ImageText from "../components/ImageText/ImageText"
+import ImageText from "../components/imageText/imageText"
 
 import visuAll_img from "../images/VisualUX.gif"
 
