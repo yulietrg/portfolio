@@ -5,11 +5,11 @@ import classes from './home.module.css'
 /*IMAGES*/
 import contact_icon from "../../images/contact-icon.svg"
 
-const Home = () =>{
+const Home = (props) =>{
     return (   
-        <section className={classes.homeContainer}>
-        <a href="#work"><h2 className={classes.floatingWork}>Work</h2></a>
-        <a href="#about"><h3 className={classes.floatingAbout}>About</h3></a>
+        <section className={classes.homeContainer} id="home">
+        <a href="javascript:void(0)" onClick={()=>props.ScrollClickHandler('#work')} className="link"><h2 className={classes.floatingWork}>Work</h2></a>
+        <a href="javascript:void(0)" onClick={()=>props.ScrollClickHandler('#about')} className="link"><h3 className={classes.floatingAbout}>About</h3></a>
 
         <div className={classes.portfolioParent}>
             <div className={classes.portfolioContainer}>
@@ -21,7 +21,7 @@ const Home = () =>{
             </div>
         </div>
 
-        <a href="#contact" className={classes.contactIcon}>
+        <a href="javascript:void(0)" onClick={()=>props.ScrollClickHandler('#contact')} className={classes.contactIcon}>
             <img src={contact_icon} alt="contact icon" />
         </a>
 

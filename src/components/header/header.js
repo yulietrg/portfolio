@@ -2,20 +2,22 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import classes from './header.module.css'
+import { visuAll } from "../../data/work";
 
 const Header = (props) => {
+
+  let classes_container = [classes.container];
+
+  if(props.page === "visuAll_page"){
+    classes_container.push(classes.darkBack)
+    classes_container = classes_container.join(' ')
+  }
+    
 
   return(
     <header>
       <nav>
-        {/* <div className="toolbar_navigation_items" style={style}>
-          <button onClick={close} className="w3-bar-item w3-button w3-large">Close &times;</button>
-          <a href="#" className=""><span>ABOUT</span></a>
-          <a href="#" className=""><span>WORK</span></a>
-          <a href="#" className=""><span>CONTACT</span></a>
-        </div> */}
-
-        <div className={classes.container}>
+        <div className={classes_container}>
           <a onClick={props.HeaderClickHandler} className={classes.menuIcon}>{"{ }"}</a>
         </div>
       </nav>

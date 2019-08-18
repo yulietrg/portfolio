@@ -10,7 +10,7 @@ const data =[
     {
         id: 0,
         subHeading : 'WEBSITE DEVELOPMENT AND AR EXPERIENCE',
-        heading : 'SPOT COLOR',
+        heading : 'PANTONE',
         description : 'WP theme customization, WooCommerce Integration, Responsive development, AR and face recognition Virtual Try-on (work in progress).',
         image : work1,
         link : 'https://www.spotcoloreyewear.com/',

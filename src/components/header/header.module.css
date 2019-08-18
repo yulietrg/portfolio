@@ -12,9 +12,25 @@ header{
     width: 100%;
   }
 
+.container{
+    display: inline-block;
+    text-align: center;
+    background-color: #2c374aa1;
+    /* padding: .8rem; */
+    border-radius: 50%;
+    height: 3.2rem;
+    width: 3.2rem;
+    white-space: nowrap;
+}
+
+.darkBack{
+  background-color: #06070d8a;
+}
+
 .menuIcon{
     color: white;
     font-family: 'Bebas', Arial, sans-serif!important;
     font-size: 2.2rem;
+    line-height: 3.2rem;
     cursor: pointer;
 }

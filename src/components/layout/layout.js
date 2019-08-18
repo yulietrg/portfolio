@@ -13,6 +13,9 @@ import Header from "../header/header"
 import Sidebar from "../sidebar/sidebar"
 import "./layout.css"
 
+import TweenLite from 'gsap'
+import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin'
+
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -30,16 +33,17 @@ const Layout = (props) => {
     setState(true)
   }
 
-  const SidebarToggleClickHandler = () =>{
+  const SidebarToggleClickHandler = (location) =>{
     setState(false)
+    TweenLite.to(window, .8, {scrollTo: location})
   }
 
 
   return (
     <>
-      <Sidebar SidebarClickHandler = {SidebarToggleClickHandler} show={state} page={props.page}/>
+      <Sidebar SidebarClickHandler = {SidebarToggleClickHandler} SidebarScrollClickHandler= {props.ScrollClickHandler} show={state} page={props.page}/>
 
-      <Header siteTitle={data.site.siteMetadata.title} HeaderClickHandler = {HeaderToggleClickHandler}/>
+      <Header siteTitle={data.site.siteMetadata.title} HeaderClickHandler = {HeaderToggleClickHandler} page={props.page}/>
 
       <main className={props.page}>{props.children}</main>
         {/* <footer>

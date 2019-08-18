@@ -1,21 +1,47 @@
-.about p{
+.about{
+    position: relative;
     padding: 4rem 1rem;
 }
-  
-.about p{
+
+.about h2{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
     color: #F16475;
 }
 
 .highlightedText{
     color: white;
     font-family: 'Lot', Arial, sans-serif!important;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
 
-    .about p{
-        padding: 10rem 0 3rem 4.5rem;
+    .about{
+        padding: 10rem 1rem 5rem 4.5rem;
+        max-width: 60rem;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
+    .about h2{
+        font-size: 2.5rem;
+    }
+
+    .highlightedText{
+        font-size: 2.8rem;
+    }
+ 
 }

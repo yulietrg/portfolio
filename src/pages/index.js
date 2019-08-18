@@ -10,12 +10,21 @@ import Contact from "../components/contact/contact"
 import ImageTextList from "../components/imageTextList/imageTextList"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+import TweenLite from 'gsap'
+import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin'
+
+const IndexPage = () => {
+
+  const ScrollGoClickHandler = (location)=>{
+    TweenLite.to(window, .8, {scrollTo: location})
+  }
+
+return(
   <Layout page="home_page">
 
     <SEO title="Home" />
 
-    <Home/>
+    <Home ScrollClickHandler={ScrollGoClickHandler}/>
 
     <About/>
 
@@ -26,6 +35,6 @@ const IndexPage = () => (
   </Layout>
 
   
-)
+)};
 
 export default IndexPage
