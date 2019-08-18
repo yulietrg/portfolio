@@ -16,6 +16,8 @@ import { TweenLite, ScrollToPlugin } from 'gsap/all'
 
 const IndexPage = () => {
 
+  const plugin = ScrollToPlugin
+
   const ScrollGoClickHandler = (location)=>{
     TweenLite.to(window, .8, {scrollTo: location})
   }

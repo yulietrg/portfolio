@@ -28,7 +28,8 @@ const Layout = (props) => {
       }
     }
   `)
-
+  const plugin = ScrollToPlugin
+  
   const [state, setState] = useState(false)
 
   const HeaderToggleClickHandler = () =>{
