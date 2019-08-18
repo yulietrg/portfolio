@@ -10,8 +10,9 @@ import Contact from "../components/contact/contact"
 import ImageTextList from "../components/imageTextList/imageTextList"
 import SEO from "../components/seo"
 
-import TweenLite from 'gsap'
-import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin'
+//import TweenLite from 'gsap'
+//import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin'
+import { TweenLite, ScrollToPlugin } from 'gsap/all'
 
 const IndexPage = () => {
 

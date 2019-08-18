@@ -13,8 +13,10 @@ import Header from "../header/header"
 import Sidebar from "../sidebar/sidebar"
 import "./layout.css"
 
-import TweenLite from 'gsap'
-import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin'
+//import TweenLite from 'gsap'
+//import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin'
+
+import { TweenLite, ScrollToPlugin } from 'gsap/all'
 
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
