@@ -1,16 +1,15 @@
 header{
- background: transparent;
+  background: transparent;
 }
 
 header{
-    /* max-width: 1000px; */
-    padding: 3rem;
+    padding: 2rem;
     position: fixed;
     display: block;
     margin: 0 auto;
     z-index: 9;
     width: 100%;
-  }
+}
 
 .container{
     display: inline-block;
@@ -33,4 +32,9 @@ header{
     font-size: 2.2rem;
     line-height: 3.2rem;
     cursor: pointer;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+
 }

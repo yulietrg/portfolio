@@ -13,7 +13,6 @@ const Header = (props) => {
     classes_container = classes_container.join(' ')
   }
     
-
   return(
     <header>
       <nav>

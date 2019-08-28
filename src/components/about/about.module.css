@@ -45,3 +45,13 @@
     }
  
 }
+
+@media screen and (min-width: 320px) and (max-width: 992px) and (orientation: landscape) {
+    .about h2{
+        font-size: 1.2rem;
+    }
+
+    .highlightedText{
+        font-size: 1.8rem;
+    }
+}

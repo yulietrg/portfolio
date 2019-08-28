@@ -13,9 +13,6 @@ import Header from "../header/header"
 import Sidebar from "../sidebar/sidebar"
 import "./layout.css"
 
-//import TweenLite from 'gsap'
-//import scrollTo from 'gsap/src/uncompressed/plugins/ScrollToPlugin'
-
 import { TweenLite, ScrollToPlugin } from 'gsap/all'
 
 const Layout = (props) => {
@@ -28,8 +25,9 @@ const Layout = (props) => {
       }
     }
   `)
-  const plugin = ScrollToPlugin
   
+  const plugin = ScrollToPlugin
+
   const [state, setState] = useState(false)
 
   const HeaderToggleClickHandler = () =>{
@@ -38,7 +36,9 @@ const Layout = (props) => {
 
   const SidebarToggleClickHandler = (location) =>{
     setState(false)
-    TweenLite.to(window, .8, {scrollTo: location})
+
+    if(props.page === "home_page")
+      TweenLite.to(window, .8, {scrollTo: location})
   }
 
 

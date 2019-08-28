@@ -1,4 +1,4 @@
-.homeContainer{
+  .homeContainer{
     height: 100vh;
     padding-top: 6rem;
     position: relative;
@@ -8,7 +8,7 @@
   .floatingWork,
   .floatingAbout{
     font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     color: white;
     position: absolute;
   }
@@ -47,6 +47,11 @@
     line-height: 1;
     letter-spacing: 1rem;
     font-weight: normal;
+    width: 16.25rem;
+  }
+
+  .portfolioContainer span{
+    display: inline-block;
   }
   
   .portfolioContainer h1:last-of-type{
@@ -124,7 +129,9 @@
     .portfolioContainer h1 {
       letter-spacing: 0.875rem;
       font-size: 9rem;
+      width: auto;
     }
+    
 
     .portfolioContainer h5.name,
     .portfolioContainer h5.profession{
@@ -132,7 +139,7 @@
     }
 
     .portfolioContainer h5.name{
-      top: 30%;
+      top: 28%;
     }
     
     .portfolioContainer h5.profession{
@@ -162,6 +169,23 @@
       font-size: 5rem;
       bottom: -3rem;
       left: 4.5rem;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 992px) and (orientation: landscape) {
+    .floatingWork,
+    .floatingAbout{
+      display: none;
+    }
+
+    .portfolioContainer h1 {
+      letter-spacing: 0.875rem;
+      font-size: 4rem;
+    }
+
+    .portfolioContainer h5.name,
+    .portfolioContainer h5.profession{
+      font-size: .9rem;
     }
   }
 
