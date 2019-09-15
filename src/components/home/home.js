@@ -5,7 +5,7 @@ import classes from './home.module.css'
 /*IMAGES*/
 import contact_icon from "../../images/contact-icon.svg"
 
-import * as ScrollMagic from "scrollmagic"
+//import * as ScrollMagic from "scrollmagic"
 import { Back, TweenMax, CSSPlugin, TimelineMax} from 'gsap/all'
 // import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 // ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
