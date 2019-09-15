@@ -41,7 +41,6 @@ const Layout = (props) => {
       TweenLite.to(window, .8, {scrollTo: location})
   }
 
-
   return (
     <>
       <Sidebar SidebarClickHandler = {SidebarToggleClickHandler} SidebarScrollClickHandler= {props.ScrollClickHandler} show={state} page={props.page}/>

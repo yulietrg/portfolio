@@ -5,7 +5,11 @@ import classes from './home.module.css'
 /*IMAGES*/
 import contact_icon from "../../images/contact-icon.svg"
 
-import { Back, TweenMax, CSSPlugin} from 'gsap/all'
+import * as ScrollMagic from "scrollmagic"
+// import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap";
+import { Back, TweenMax, CSSPlugin, TimelineMax} from 'gsap/all'
+import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 
 const Home = (props) =>{
@@ -26,33 +30,34 @@ const Home = (props) =>{
     let profession = useRef(null);
 
     const plugin = CSSPlugin
-    //const animation = new TimelineLite()
+    const tl = new TimelineMax()
+    //const scroll = new ScrollMagic.Controller();
 
     useEffect(() => {
-        //const menuH1 = title.querySelectorAll('h1')
-        //TweenMax.staggerFrom(menuH1, 0.5, { autoAlpha: 0, y: 60 }, 0.2)
 
-        TweenMax.from(work, 0.5, { opacity: 0, x: -40 })
-        TweenMax.from(about, 0.5, { opacity: 0, y: 40, delay: 0.5 })
+        tl.from(work, 0.6, { opacity: 0, x: -40 })
+            .from(letter1, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -30}, 0.2)
+            .from(letter2, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -150}, 0.2)
+            .from(letter3, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -290}, 0.2)
+            .from(letter4, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: 30,}, 0.4)
+            .from(letter5, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: 150}, 0.4)
+            .from(letter6, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: 290}, 0.4)
+            .from(about, 0.6, { opacity: 0, y: 40, }, 0.5 )
+            .from(letter7, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -30}, 0.6)
+            .from(letter8, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -150}, 0.6)
+            .from(letter9, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -290}, 0.6)
+            .from(name, 0.8, { opacity: 0}, 1)
+            .from(profession, 0.8, { opacity: 0}, 1)
 
-        TweenMax.from(letter1, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -30, delay: 0.2 })
-        TweenMax.from(letter2, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -150, delay: 0.2 })
-        TweenMax.from(letter3, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -290, delay: 0.2 })
-
-        TweenMax.from(letter4, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -30, delay: 0.4 })
-        TweenMax.from(letter5, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -150, delay: 0.4})
-        TweenMax.from(letter6, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -290, delay: 0.4 })
-
-        TweenMax.from(letter7, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -30, delay: 0.6 })
-        TweenMax.from(letter8, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -150, delay: 0.6 })
-        TweenMax.from(letter9, 0.5, { ease: Back.easeOut.config(1.7), opacity: 0, x: -290, delay: 0.6 })
-
-        // TweenMax.from(letter1, 0.3, { x: -160, y: -140, scale: 0.5, delay: 0.2 })
-        // TweenMax.from(letter2, 0.3, { y: -160, scale: 0.5, delay: 0.3 })
-        // TweenMax.from(letter3, 0.3, { x: 220, scale: 0.5, delay: 0.4 })
-
-        TweenMax.from(name, 0.8, { opacity: 0, delay: 1 })
-        TweenMax.from(profession, 0.8, { opacity: 0, delay: 1 })
+        /*const sc = new ScrollMagic.Scene({
+            triggerElement: "#home",
+            duration: 400, // scroll distance
+            offset: 200 // start this scene after scrolling for 50px
+            })
+            .setTween(tl)
+            .setPin(about)
+            .addIndicators({name: "1 trigger ever"});
+            sc.addTo(scroll);*/
         
       }, []);
 
